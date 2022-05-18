@@ -1,0 +1,232 @@
+﻿
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cbdfbd;
+    font-size: 14px;
+    color: #1b4332;
+    margin: 20px;
+    padding: 30px;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+button {
+    background: none;
+}
+/*lưới công cụ*/
+.wapper {
+    display: grid;
+    padding-left: 101px;
+    grid-template-columns: 80px 80px 100px 100px 120px 120px 100px;
+    height: 35px;
+    background-color: #d8f3dc;
+    position:sticky;
+}
+
+.item {
+    font-size: 14px;
+    text-align: center;
+    color: #1b4332;
+}
+
+/*nút*/
+.button {
+    background-color: #d8f3dc;
+    border: 1px solid #dce5d7;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button-1 {
+    background-color: #1b4332;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align:center;
+    margin:20px 5px;
+}
+
+.button:hover {
+    background-color: #b7e4c7;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+.text-line {
+    color: #d8f3dc;
+    text-align: center;
+    
+}
+.text-line1{
+    position: div absolute;
+    font-weight:bold;
+    color:#d8f3dc;
+    text-align:center;
+    word-wrap: break-word;
+    width:200px;
+    background-color:#000000;
+}
+.text-line1:hover{
+    opacity:0.5;
+}
+
+/*gợi ý*/
+.mySlide{
+    display:none;
+}
+.img{
+    vertical-align:top;
+    object-fit:cover;
+    position:relative;
+}
+/**/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4 }
+    to { opacity: 1}
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    background-size:cover;
+    background-position:bottom;
+    padding-left:10px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.slide-tt {
+    opacity: 1;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*tìm kiếm*/
+
+.box {
+    margin:10px 20px ;
+    width: 100px;
+    height: 10px;
+}
+.container-1 {
+    width: 200px;
+    vertical-align: middle;
+    position: relative;
+}
+.container-1 input#search {
+    width: 300px;
+    height: 40px;
+    background: #d8f3dc;
+    font-size: 12pt;
+    border:none;
+    float: left;
+    color: #63717f;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.container-1 .icon {
+    text-align: center;
+    font-size:20px;
+    position: absolute;
+    z-index: 1;
+    color: #1b4332;
+    background: #d8f3dc;
+    width: 45px;
+    height: 40px;
+    border-radius: 0 5px 5px 0 ;
+    padding-top:5px;
+}
+
+.container-2{
+    font-size:30px;
+    position:absolute;
+    color:#d8f3dc;
+    text-align:center;
+    margin:5px 20px;
+    width:100px;
+}
+
+/*chuyển trang*/
+.pagination {
+    display: inline-block;
+}
+
+.pagination .an{
+    color: #1b4332;
+    float: none;
+    font-size:14px;
+    padding-bottom: 30px 200px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+
+}
+
+.pagination a.actived {
+    background-color:#ffffff ;
+    color: #1b4332;
+    border: 1px solid #b7e4c7;
+}
+
+.pagination a:hover:not(.actived) {
+    background-color: #ddd;
+}
+
+
+
